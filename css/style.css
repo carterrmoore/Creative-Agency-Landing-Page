@@ -15,6 +15,7 @@ body {
 .grid {
         display: flex;
         flex-direction: column;
+        row-gap: 0;
     }
 
 
@@ -38,38 +39,32 @@ p {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 2em 4em;
+    align-items: center;
+    padding: 1em 1.5em;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+
 .logo {
-    font-size: 1.8em;
+    font-size: 2.5em;
     color: white;
     font-weight: 800;
     font-family: 'Barlow', sans-serif;
+    margin: 0;
 }
 
-.navlink {
-    text-decoration: none;
-    color: white;
-    font-size: .9em;
-    font-family: 'Barlow', sans-serif;
-    margin: 0 1em;
-}
 
-.navlink:hover,
-.navlink:focus {
-    border-bottom: 1px solid white;
-}
 
 .navbtn {
     text-decoration: none;
     background-color: white;
     color: black;
     text-transform: uppercase;
-    margin: 0 1em;
+    margin: 0 .5em;
     padding: .6em 1.1em;
     border-radius: 50px;
-    font-size: .9em;
+    font-size: .8em;
     
 }
 
@@ -123,6 +118,7 @@ nav {
 .text-body {
     padding: 5em;
     background-color: white;
+    margin-top: -1em;
 }
 
 .text-body h2 {
@@ -135,8 +131,8 @@ nav {
     width: 100%;
     height: 100%;
     margin: 0;
-    align-self: flex-start;
 }
+
 
 
 
@@ -170,10 +166,6 @@ nav {
 }
 /* REIVEWS */
 
-
-.div8 * {
-    border: 1px solid red;
-}
 
 
 .div8 {
@@ -242,22 +234,23 @@ footer h3 {
 }
 
 
-.footerlink {
+.footerbtn {
     text-decoration: none;
-    text-align: center;
-    color:rgba(0, 0, 0, 0.477);
-    margin: 0 2em;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: .6em 1.1em;
+    border-radius: 50px;
+    font-size: .8em;
+    max-width: max-content;
+    
 }
 
-.footerlink:hover,
-.footerlink:focus {
-    color: rgba(255, 255, 255, 0.327);
-    cursor: pointer;
-}
-
-.footerlink:visited {
-    color:rgba(0, 0, 0, 0.477);
-
+.footerbtn:hover,
+.footerbtn:focus {
+    background-color: rgba(255, 255, 255, 0.347);
+    color: #fff;
 }
 
 .footerimages {
@@ -328,6 +321,29 @@ footer h3 {
     .div7 { grid-area: div7; }
     .div8 { grid-area: div8; }
 
+    
+    nav {
+        align-items: center;
+        padding: 2em 4em;
+    }
+
+    
+    .emptynav {
+        width: 8em;
+    
+    }
+    
+    .logo {
+        justify-self: center;
+        text-align: center;
+        font-size: 2.5em;
+        color: white;
+        font-weight: 800;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+    
+    
     .header {
         font-size: 3.1rem;
         letter-spacing: 8px;
@@ -335,6 +351,7 @@ footer h3 {
 
     .text-body {
         text-align: left;
+        margin-top: 0;
     }
 
     .down-arrow {
