@@ -92,7 +92,12 @@ nav {
     color: #000;
     text-decoration: none;
     border-bottom: yellow 5px solid;
-    border-radius: 5px;
+}
+
+.learnmore:hover,
+.learnmore:focus {
+    color: rgba(0, 0, 0, 0.813);
+    border-bottom: #FA7264 5px solid;
 }
 
 
@@ -165,19 +170,23 @@ nav {
 }
 /* REIVEWS */
 
+
+.div8 * {
+    border: 1px solid red;
+}
+
+
 .div8 {
     background-color: white;
+    text-align: center;
 }
 
 .review {
     padding: 4em;
+    margin: 0 auto;
 
 }
 
-.div8 h2 {
-    padding-top: 8em;
-    margin: 0;
-}
 
 .img-review {
     border-radius: 100px;
@@ -187,10 +196,9 @@ nav {
 .review-header {
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom: 55px;
-    margin-top: 25px;
     color:rgba(0, 0, 0, 0.402);
     font-size: 16px;
+    padding-top: 8em;
 }
 
 .review-name {
