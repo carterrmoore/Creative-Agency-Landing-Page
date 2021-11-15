@@ -374,6 +374,10 @@ footer h3 {
         
     }
 
+    .div8 {
+        background-color: white;
+    }
+
     .review {
         display: flex;
         flex-direction: row;
